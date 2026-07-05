@@ -25,7 +25,10 @@ Click a badge and a small dialog asks for the text. Leave it empty to clear the
 label. The change is saved immediately (no "Save & Apply" needed) and survives
 page reloads and reboots.
 
-![Editing a label](images/edit-dialog.svg)
+![Editing a label](images/edit-dialog.png)
+
+*The prompt text (`Label for lanX:`) comes from the tool; the surrounding
+dialog chrome is in your browser's own language.*
 
 ## Requirements
 
