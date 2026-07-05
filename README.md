@@ -17,7 +17,7 @@ placeholder.*
 The blue badge sits **above the traffic counters**, directly under the link
 speed.
 
-![Close-up of three port tiles](images/tile-closeup.svg)
+![Close-up of three port tiles](images/tile-closeup.png)
 
 ## How it looks / how you edit
 
