@@ -1,0 +1,15 @@
+{
+  "port_labels": {
+    "description": "Port Label Management",
+    "read": {
+      "ubus": {
+        "port_labels": [ "get_labels", "set_label" ]
+      }
+    },
+    "write": {
+      "ubus": {
+        "port_labels": [ "get_labels", "set_label" ]
+      }
+    }
+  }
+}
