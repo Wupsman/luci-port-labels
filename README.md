@@ -71,21 +71,6 @@ blue badge to name the port.
 The installer is idempotent — if the SSH connection drops midway, just run it
 again; existing labels are never overwritten.
 
-## Two things the original version got wrong
-
-This repo fixes two bugs that were present in an earlier build of this tool:
-
-1. **`patch_29ports.py` bracketing.** The badge insertion closed its brackets
-   as `)])],` which produces
-   `SyntaxError: missing ) after argument list` and blanks the whole Status
-   page. The correct closure is `))]),` — see the comment in
-   [`files/patch_29ports.py`](files/patch_29ports.py).
-
-2. **CGI response shape.** The `GET` handler must return
-   `{"labels": { … }}`, because `99_portlabels.js` reads `data.labels`. If it
-   returns the bare object, the loader gets nothing on every LuCI poll and the
-   labels **flicker and disappear a few seconds after each edit**.
-
 ## Behaviour across updates
 
 | Item | Survives `sysupgrade` (config kept)? |
