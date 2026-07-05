@@ -31,7 +31,7 @@ return baseclass.extend({
           s.style='font-size:10px;background:#1a3a6a;color:#8abcff;padding:1px 5px;border-radius:3px;cursor:pointer;display:inline-block';
           s.textContent=window._plLabels[p]||'Label...';
           s.onclick=function(){
-            var t=prompt('Label fuer '+p+':',window._plLabels[p]||'');
+            var t=prompt('Label for '+p+':',window._plLabels[p]||'');
             if(t!=null){
               saving=true;
               window._plLabels[p]=t;
