@@ -8,10 +8,14 @@ to every browser on the network.
 Developed and tested on **Zyxel GS1900-24HP** (v1/A1 and B1, `realtek/rtl838x`)
 running **OpenWrt 24.10.x and 25.12.x**.
 
-![Port status overview with labels](images/overview.svg)
+![Port status overview with labels](images/overview.png)
+
+*Live LuCI Status → Overview on a GS1900-24HP: ports 1, 2, 7 and 10 are named
+(`Router`, `Camera Pool`, `AP Office`, `NAS`); the rest show the `Label...`
+placeholder.*
 
 The blue badge sits **above the traffic counters**, directly under the link
-speed. Ports without a name show a placeholder `Label...` badge.
+speed.
 
 ![Close-up of three port tiles](images/tile-closeup.svg)
 
